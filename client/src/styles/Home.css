@@ -1,0 +1,328 @@
+.homePage{
+    height: 215vh;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.homePage-hero{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, rgba(0,0,0,0.6), rgba(0, 0, 0, 0)), url('../images/home-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.home-header{
+    width: 100%;
+    display: flex;
+    height: 10vh;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+}
+
+.home-header .home-logo h2{
+    color: rgb(26, 171, 244);
+    font-size: 2.2rem;
+    font-family: 'Rubik Wet Paint', cursive;
+    font-weight: bold;
+}
+
+.home-header .header-before-login button{
+    border: 1px solid rgba(196, 217, 228, 0.637);
+    padding: 3px 20px;
+    border-radius: 0.6rem;
+    background-color: #daf8f527;
+    color: rgb(203, 225, 236);
+    font-weight: 500;
+    /* font-weight: bold; */
+    /* font-family: 'Kalam', cursive; */
+    /* color: rgba(245, 251, 255, 0.879);
+    width: 100px;
+    padding: 5px;
+    border: none;
+    background-color: rgb(1, 104, 188);
+    border-radius: 0.3rem; */
+}
+
+
+.home-header .header-after-login span{
+    
+    color: rgb(203, 225, 236);
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.home-header .header-after-login #dropdown-basic{
+    border: 1px solid rgba(196, 217, 228, 0.637);
+    padding: 3px 20px;
+    border-radius: 0.6rem;
+    background-color: #daf8f527;
+    color: rgb(203, 225, 236);
+    font-weight: 500;
+    outline: none;
+}
+.dropdown-options{
+    text-decoration: none;
+    color: rgb(2, 43, 69);
+}
+.dropdown-options:hover{
+    text-decoration: none;
+    color: black;
+}
+.home-app-intro{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 7%;
+}
+.home-app-intro span{
+
+    font-size: 1.5rem;
+    font-family: 'Kalam', cursive;
+    color: rgb(1, 104, 188);
+    font-weight: bold;
+}
+.home-app-intro h2{
+    font-size: 2.1rem;
+    /* font-family: 'Philosopher', sans-serif; */
+    font-family: 'GFS Neohellenic', sans-serif;
+    color: rgba(5, 34, 53, 0.879);
+}
+.home-app-intro p{
+    font-size: 0.9rem;
+    font-family: 'Philosopher', sans-serif;
+    /* font-family: 'GFS Neohellenic', sans-serif; */
+    color: rgba(5, 34, 53, 0.879);
+}
+.home-app-intro button{
+    font-weight: bold;
+    font-family: 'Kalam', cursive;
+    font-size: 1.2rem;
+    color: rgba(245, 251, 255, 0.879);
+    width: 120px;
+    padding: 10px;
+    border: none;
+    background-color: rgb(5, 86, 151);
+    border-radius: 0.3rem;
+}
+
+.home-meet-container{
+    margin-top: 2%;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.home-meet-container p{
+    font-size: 1.2rem;
+    color: rgb(7, 59, 78);
+    margin: 0;
+}
+.home-meet-container span{
+    font-size: 1rem;
+    color: rgb(241, 39, 39);
+    margin: 0;
+}
+
+.create-meet, .join-meet{
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.create-meet input, .join-meet input{
+    width: 250px;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    color: rgb(4, 47, 94);
+}
+.create-meet input::placeholder  , .join-meet input::placeholder{
+    color: rgb(173, 174, 174);
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-size: 1.1rem;
+}
+
+.create-meet button, .join-meet button{
+    width: 150px;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(2, 127, 199);
+    color: aliceblue;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.join-meet button{
+    width: 150px;
+    padding: 7px 10px;
+    border: none;
+    outline: none;
+    background-color: rgb(1, 152, 59);
+    color: aliceblue;
+    font-weight: bold;
+}
+
+
+
+.about-app-container{
+    height: 100vh;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+
+
+.about-app-container .box {
+    background-color: transparent;
+    width: 30vw;
+    height: 70vh;
+    perspective: 1000px;
+
+  }
+.about-app-container .box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+    
+  }
+.about-app-container  .box:hover .box-inner {
+    transform: rotateY(180deg);
+  }
+  .about-app-container  .box-front,
+  .about-app-container .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 0.8rem;
+    padding: 2% 4%;
+  }
+  .about-app-container  .box-front , .box-back {
+    background: linear-gradient(120deg, rgba(0, 140, 255, 0.8), rgba(192, 145, 249, 0.5)), url('../images/box-front.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .about-app-container   .box-back {
+    background: linear-gradient(120deg,rgba(237, 145, 249, 0.6), rgba(0, 140, 255, 0.8)), url('../images/box-front.avif');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+  }
+  .about-app-container  .box-front h2, .box-back h2{
+    color: #eeeeee;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-weight: bold;
+  }
+  .about-app-container  .box-front p, .box-back p{
+    color: #ffffff;
+  }
+  .about-app-container .box-back  {
+    transform: rotateY(180deg);
+    
+  }
+
+
+
+
+
+  .about-cards{
+    width: 50%;
+    height: 80%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .about-cards .about-card-body{
+    background-color: rgba(237, 255, 255, 0.491);
+    backdrop-filter: blur(10px);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-cards .about-card-body:hover{
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+
+  }
+  .about-card-title {
+    border: 1px solid #16619a;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    padding-top: 5px;
+  }
+  .about-card-title span{
+    color: #16619a;
+  }
+  .about-card-text{
+    color: #084e84e2;
+    font-size: 0.9rem;
+    padding-top: 20px;
+  }
+
+
+
+  .footer{
+    height: 15vh;
+    width: 100%;
+    background-color: #053b5f;
+    display: flex;
+    /* flex-direction: column; */
+    /* justify-content: center; */
+    align-items: center;
+    padding-left: 20px;
+
+    gap: 15px;
+  }
+  
+  .footer h2{
+   color: #d4c5c5;
+   font-size: 1.5rem;
+  }
+  
+  .footer .footer-social-media{
+    color: #c9c7c7;
+    display: flex;
+    gap: 25px;
+  }
