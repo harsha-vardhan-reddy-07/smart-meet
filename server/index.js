@@ -2,7 +2,6 @@ import express from 'express';
 import bodyParser from 'body-parser';
 import mongoose from 'mongoose';
 import cors from 'cors';
-import dotenv from 'dotenv';
 import {Server} from 'socket.io';
 import http from 'http';
 
@@ -13,7 +12,6 @@ import roomHandler from './socket/roomHandler.js';
 import authRoutes from './routes/auth.js';
 
 
-dotenv.config();
 
 const app = express();
 
@@ -42,8 +40,8 @@ io.on("connection", (socket) =>{
     })
 
 })
-const PORT = process.env.PORT || 6001;
-mongoose.connect(process.env.MONGO_URL, {
+const PORT = 6001;
+mongoose.connect('mongodb://localhost:27017/meet-app', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(()=>{
