@@ -1,0 +1,80 @@
+.profile-card-body{
+    height: 50vh;
+    border-radius: 1rem;
+    /* border: 2px solid #1e53d0; */
+    padding: 5%;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.profile-card-body button{
+    position: relative;
+    left: 85%;
+    border:none;
+    background-color: rgba(240, 248, 255, 0);
+    color: rgb(15, 79, 132);
+    
+}
+.profile-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.profile-data .profile-img{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border: 2px solid #1e53d033;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.profile-card-body img{
+    width: 100px;
+    height: 100px;
+}
+
+.profile-card-body .profile-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-card-body .profile-info p{
+    margin: 0;
+    color: rgb(2, 34, 58);
+    font-weight: 500;
+}
+.profile-card-body .profile-info p span{
+    color: rgb(44, 108, 156);
+}
+
+.profile-card-body .update-data{   
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.profile-card-body .update-data input{   
+    border: none;
+    background-color: rgba(112, 114, 116, 0.128);
+    backdrop-filter: blur(5px);
+    padding: 5px 10px;
+    border-radius: 0.4rem;
+    color: rgb(4, 59, 89);
+}
+
+
+.profile-card-body .update-data #update-btn{   
+    /* width: 50px; */
+    position: relative;
+    top: 0;
+    left: -10px;
+    background-color: rgb(21, 92, 135);
+    padding: 5px 20px;
+    border-radius: 0.3rem;
+    color: #fff;
+}

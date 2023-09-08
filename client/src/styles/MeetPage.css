@@ -1,0 +1,310 @@
+.meetPage{
+    min-height: 100vh;
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(3, 21, 36);
+}
+
+.meetPage-header{ 
+    position: fixed;
+    padding: 0 2%;
+    display: flex;
+    align-items: center;
+    top: 0;
+    height: 8vh;
+    width: 100%;
+    z-index: 3;
+    background-color: rgb(3, 21, 36);
+    border-bottom: 1px solid #ffffff69;
+    justify-content: space-between;
+}
+.meetPage-header h3{
+    color: rgb(205, 202, 202);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.meetPage-header h3 span{
+    color: rgb(151, 148, 148);
+
+}
+.meetPage-header p{
+    color: rgb(205, 202, 202);
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 0;
+}
+.meetPage-header p #meet-id-copy{
+    color: rgb(151, 148, 148);
+    cursor: pointer;
+}
+.meetPage-videoPlayer-container{
+    background-color: rgb(1, 8, 15);
+    position: absolute;
+    top: 0vh;
+    min-height: 92vh;
+    width: 100%;
+    z-index: 1;
+    padding-top: 8vh;
+
+}
+
+.meetPage-controls-part{
+    height: 10vh;
+    width: 100%;
+    position: fixed;
+    top: 90vh;
+    z-index: 3;
+    background-color: none;
+}
+
+/* Video player part */
+
+.videoPlayer-page{
+    height: 92vh;
+    width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 20px;
+    align-items: center;
+    justify-content: center;
+    overflow-y: scroll;
+}
+.videoPlayer-page::-webkit-scrollbar {
+    display: none;
+}  
+.videoPlayer-page {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.videoplayer-video{
+    height: 51vh;
+    width: 30vw;
+    border-radius: 0.7rem;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.videoplayer-video #video{
+    height: 50vh;
+    width: 30vw;
+    border-radius: 0.7rem;
+    overflow: hidden;
+}
+.videoplayer-video p{
+    color: rgb(227, 230, 233);
+    
+}
+
+
+/* controllers part */
+
+.controls-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    /* background-color: rgb(3, 21, 36); */
+}
+
+.controllers-video-part{
+    display: flex;
+    background-color: rgba(227, 241, 241, 0.178);
+    backdrop-filter: blur(10px);
+    padding: 10px 15px;
+    border-radius: 0.5rem;
+    gap: 10px;
+}
+
+.controllers-video-part button{
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.controllers-chat-participants{
+    position: absolute;
+    right: 1%;
+}
+
+.controllers-chat-participants button{
+    background-color: #ffffff00;
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+
+
+/* Participants */
+
+.participants-page{
+    height: 80vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 10vh;
+    z-index: 4;
+    padding: 1%;
+    transition-duration: 1s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+}
+
+.participants-page h3{
+    font-size: 1.3rem;
+    color: rgb(2, 23, 40);
+    margin: 2% 0 0 0;
+}
+.participants-page #h3-hr{
+    border: 1.5px solid #064661;
+    backdrop-filter: blur(0px);
+    margin: 0;
+    width: 100%;
+    margin: 4% 0;
+}
+
+.participants-page .participants-container{
+    height: 90%;
+    /* background-color: #064661; */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    overflow-y: scroll;
+}
+.participants-page .participants-container::-webkit-scrollbar {
+    display: none;
+}  
+.participants-page .participants-container {
+-ms-overflow-style: none;  /* IE and Edge */
+scrollbar-width: none;  /* Firefox */
+}
+
+.participants-page .participant{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.participants-page .participant h4{
+    font-size: 1rem;
+    margin: 0;
+    padding-bottom: 5px;
+    font-weight: 400;
+}
+.participants-page .participant-logo{
+    width: 30px;
+    height: 30px;
+    /* border: 1px solid #021920; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: rgba(177, 97, 191, 0.505);
+}
+.participants-page .participant-logo p{
+    color: rgb(225, 233, 241);
+    margin: 0;
+    padding-top: 2px;
+}
+
+
+/* CHats component */
+
+.chats-page{
+    height: 80vh;
+    width: 20vw;
+    background-color: rgba(255, 255, 255, 0.89);
+    backdrop-filter: blur(10px);
+    border-radius: 0.5rem;
+    position: absolute;
+    top: 10vh;
+    z-index: 4;
+    padding: 1%;
+    transition-duration: 1s;
+    transition-timing-function: linear;
+    transition-delay: 0s;
+}
+
+.chats-page h3{
+    font-size: 1.3rem;
+    color: rgb(2, 23, 40);
+    margin: 2% 0 0 0;
+}
+.chats-page #h3-hr{
+    border: 1.5px solid #064661;
+    backdrop-filter: blur(0px);
+    margin: 0;
+    width: 100%;
+    margin: 4% 0;
+}
+
+.chats-page .chat-container{
+    /* background-color: #064661; */
+    height: 90%;
+}
+
+.chats-page .chat-messages-box{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.chats-page .chat-messages-box .message-body{
+    display: flex;
+    flex-direction: column; 
+     
+}
+
+.chats-page .chat-messages-box .message-body span{
+    margin: 0;
+    font-size: 1rem;
+    color: #064e6d;
+    font-weight: 500;
+}
+
+.chats-page .chat-messages-box .message-body p{
+    margin: 0;
+    font-size: 0.8rem
+}
+
+
+
+
+.chats-page .send-messages-box{
+    /* background-color: aqua; */
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px
+}
+
+.chats-page .send-messages-box #fileInput{
+    display: none;
+}
+.chats-page .send-messages-box label{
+    color: #4d5254;
+    cursor: pointer;
+}
+
+.chats-page .send-messages-box input{
+    width: 75%;
+    border-radius: 0.4rem;
+    border: none;
+    outline: none;
+    padding: 2px;
+    background-color: rgb(255, 255, 255);
+}
+
+.chats-page .send-messages-box button{
+    border-radius: 0.5rem;
+    border: none;
+    color: #076993;
+    background-color: #e7eef100;
+}
